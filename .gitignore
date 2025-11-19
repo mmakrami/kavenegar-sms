@@ -1,0 +1,5 @@
+kavenegar-sms
+*.log
+*.out
+*.tmp
+.DS_Store

@@ -1,0 +1,33 @@
+{
+  "receiver": "sms-kavenegar",
+  "status": "firing",
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "InstanceDown",
+        "instance": "example-prometheus:9090",
+        "job": "prometheus",
+        "severity": "critical"
+      },
+      "annotations": {
+        "summary": "Prometheus instance is down",
+        "description": "Prometheus example-prometheus:9090 has been unreachable for more than 5 minutes."
+      }
+    }
+  ],
+  "groupLabels": {
+    "alertname": "InstanceDown"
+  },
+  "commonLabels": {
+    "alertname": "InstanceDown",
+    "job": "prometheus",
+    "severity": "critical"
+  },
+  "commonAnnotations": {
+    "summary": "Prometheus instance is down"
+  },
+  "externalURL": "http://localhost:9093",
+  "version": "4",
+  "groupKey": "{}:{alertname=\"InstanceDown\"}"
+}
